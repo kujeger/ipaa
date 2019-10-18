@@ -1,13 +1,15 @@
 # I eller På?
 
+Kjørende instans: http://i.på.io
+
 Denne tjenesten kan fortelle deg om det heter "i" eller "på" et sted.
 Den aksepterer både postnummer og poststed!
 
 bruk:
 
-`curl -s localhost:8080/api/1/steder/postnummer/0651`
+`curl -s http://i.på.io/api/1/steder/postnummer/0651`
 
-`curl -s localhost:8080/api/1/steder/poststed/OSLO`
+`curl -s http://i.på.io/api/1/steder/poststed/OSLO`
 
 (poststed er ikke case-sensitive)
 
