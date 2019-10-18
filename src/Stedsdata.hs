@@ -3491,7 +3491,7 @@ steder = [
     Sted 6435 "MOLDE" 1502 "MOLDE" P I,
     Sted 6436 "MOLDE" 1502 "MOLDE" P I,
     Sted 6440 "ELNESVÅGEN" 1548 "FRÆNA" G Ukjent,
-    Sted 6443 "TORNES I ROMSDAL" 1548 "FRÆNA" G Ukjent,
+    Sted 6443 "TORNES I ROMSDAL" 1548 "FRÆNA" G I,
     Sted 6444 "FARSTAD" 1548 "FRÆNA" G Ukjent,
     Sted 6445 "MALMEFJORDEN" 1548 "FRÆNA" G Ukjent,
     Sted 6446 "FARSTAD" 1548 "FRÆNA" P Ukjent,
