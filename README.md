@@ -4,8 +4,10 @@ Denne tjenesten kan fortelle deg om det heter "i" eller "på" et sted.
 Den aksepterer både postnummer og poststed!
 
 bruk:
-curl -s localhost:8080/api/1/steder/postnummer/0651
-curl -s localhost:8080/api/1/steder/poststed/OSLO
+
+`curl -s localhost:8080/api/1/steder/postnummer/0651`
+
+`curl -s localhost:8080/api/1/steder/poststed/OSLO`
 
 (poststed er ikke case-sensitive)
 
@@ -15,3 +17,13 @@ Råtata om postnummer er hentet herfra: https://www.bring.no/radgivning/sende-no
 For å generere endelig dataliste til Stedsdata.hs kan du kjøre `updateStedsdata.sh`
 
 Dette prosjektet finnes takket være Finn.no sin hackdays #5 . Hurrah!
+
+## Å bygge og kjøre
+Prosjektet bruker Stack
+
+`stack setup`
+`stack build`
+`stack run`
+
+## Mangler DITT stedsnavn?
+Lag en PR!
