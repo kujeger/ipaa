@@ -16,7 +16,7 @@ bruk:
 ## Oppdatering av liste
 Råtata om postnummer er hentet herfra: https://www.bring.no/radgivning/sende-noe/adressetjenester/postnummer/postnummertabeller-veiledning
 
-For å generere endelig dataliste til Stedsdata.hs kan du kjøre `updateStedsdata.sh`
+Legg til/endre preposisjon ved å redigere `postal-name-prepositions.txt`, og så kjøre `updateStedsdata.sh` .
 
 Dette prosjektet finnes takket være Finn.no sin hackdays #5 . Hurrah!
 
