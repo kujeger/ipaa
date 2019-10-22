@@ -16,12 +16,16 @@ import Data.Char
 import Sted
 import Stedsdata
 
+data Health = Good | Bad
+
 $(deriveJSON defaultOptions ''Kategori)
 $(deriveJSON defaultOptions ''Preposisjon)
 $(deriveJSON defaultOptions ''Sted)
 $(deriveJSON defaultOptions ''Resultat)
+$(deriveJSON defaultOptions ''Health)
 
 type StedAPI = Get '[PlainText] String
+            :<|> "_" :> "health" :> Get '[JSON] Health
             :<|> "api" :> "1" :> "steder" :> "alle" :> Get '[JSON] [Sted]
             :<|> "api" :> "1" :> "steder" :> "postnummer" :> Capture "x" Postnummer :> Get '[JSON] (Maybe Resultat)
             :<|> "api" :> "1" :> "steder" :> "poststed" :> Capture "x" Poststed :> Get '[JSON] (Maybe Resultat)
@@ -37,6 +41,7 @@ stedAPI = Proxy
 
 server :: Server StedAPI
 server = return helpText
+      :<|> return Good
       :<|> return steder
       :<|> findPostnummer
       :<|> findPoststed
